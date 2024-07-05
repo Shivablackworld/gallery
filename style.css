@@ -1,0 +1,41 @@
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    border: 2px solid #ff00b7;
+    gap: 5px;
+    background-color: orangered;
+    padding: 5px;
+    box-shadow: 0px 0px 10px black,
+    0px 0px 10px #ff00f2 inset ;
+}
+
+img{
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+img:hover {
+    filter: grayscale(0%);
+
+}
+
+.image-1 {
+grid-row:    1/ span 3;
+grid-column: 1/span 3;
+}
+
+.image-4{
+    grid-row: 2/span 2;
+    grid-column: 4/span 2;
+}
+
+
+
